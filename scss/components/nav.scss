@@ -1,0 +1,141 @@
+.nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 170px;
+
+  &__logo {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: -80px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 77px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 75%;
+      height: 2px;
+      background: #8fab32;
+    }
+  }
+
+  &__menu-link {
+    margin-right: 25%;
+  }
+}
+
+.burgermenu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 174px;
+  max-width: 100%;
+  height: 77px;
+  background: #8fab32;
+  top: 0;
+  right: -170px;
+
+  &__lines {
+    position: relative;
+    width: 35px;
+    height: 40px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+
+    span {
+      display: block;
+      position: absolute;
+      border-radius: 8px;
+      width: 100%;
+      height: 3px;
+      background: #fff;
+
+      &:nth-child(1) {
+        top: 10px;
+      }
+      &:nth-child(2) {
+        top: 30px;
+      }
+    }
+  }
+
+  &__lines.open {
+
+    span {
+      &:nth-child(1) {
+        top: 20px;
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        top: 20px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    background: #8fab32;
+    width: 400px;
+    bottom: -402px;
+    right: 0;
+    text-align: right;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font: {
+        family: "avenir-next-cyr-light";
+        size: 15px;
+      }
+      line-height: 29px;
+      letter-spacing: 0.7px;
+    }
+
+    ul {
+      padding-top: 30px;
+      margin-bottom: 80px;
+
+      li {
+        position: relative;
+        margin-right: 80px;
+        padding: 10px 0;
+        
+        &:hover {
+          border-bottom: 1px solid #191919;
+          margin-bottom: -1px;
+
+          &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            background: #191919;
+            width: 15px;
+            height: 15px;
+            bottom: -15px;
+            left: 0;
+          }
+        }
+      }
+    } 
+  }
+}
+
+.active {
+  display: block;
+}
