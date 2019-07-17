@@ -6,7 +6,7 @@
   font-size: 16px;
   letter-spacing: 0.2px;
   width: 130px;
-  padding: 10px 0;
+  padding: 10px 15px;
   cursor: pointer;
 
   a {
@@ -22,17 +22,26 @@
 .pages {
   display: flex;
 
-  &__numb,
+  @media screen and (max-width: 1100px) {
+    justify-content: flex-end;
+  }
+
+  &__number,
   &__before,
   &__next {
     text-align: center;
     padding: 10px;
   }
 
-  &__numb {
+  &__number {
     background: #000;
     color: #fff;
     height: 50px;
+    font: {
+      family: "avenir-next-cyr-bold", sans-serif;
+      size: 22px;
+    }
+    letter-spacing: 1px;
   }
 
   &__before,
@@ -43,6 +52,7 @@
       left: 20px;
       right: 20px;
     }
+    border: 1px solid transparent;
 
     &:hover {
       border: 1px #fabeaf solid;
@@ -53,7 +63,7 @@
 
 .pages-style-pink {
 
-  .pages__numb {
+  .pages__number {
     background: #fabeaf;
   }
 
@@ -61,14 +71,14 @@
     border-left: #888 2px solid;
 
     &:hover {
-      border-left: #888 2px solid;
+      border-left: pink 2px solid;
     }
   }
 
   .pages__before {
 
     &:hover {
-      border-right: none;
+      border-right: transparent 1px solid;
     }
   }
 }

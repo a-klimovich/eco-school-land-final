@@ -389,36 +389,11 @@ textarea {
 body { 
 
   font: {
-    family: "avenir-next-cyr-regular";
+    family: "avenir-next-cyr-regular", sans-serif;
     size: 16px;
   }
   line-height: 29px;
   letter-spacing: 0.7px;
-
-  h1 {
-    font: {
-      family: "avenir-next-cyr-bold";
-      size: 42px;
-    }
-    line-height: 54.4px;
-    letter-spacing: -0.6px;
-  }
-
-  h2 {
-    font: {
-      family: "avenir-next-cyr-bold";
-      size: 38px;
-    }
-    letter-spacing: -0.1px;
-  }
-
-  h3 {
-    font: {
-      family: "avenir-next-cyr-bold";
-      size: 22px;
-    }
-    letter-spacing: 1px;
-  }
 
   a {
     text-decoration: none;
@@ -426,13 +401,38 @@ body {
   }
 }
 
+.h1 {
+  font: {
+    family: "avenir-next-cyr-bold", sans-serif;
+    size: 42px;
+  }
+  line-height: 54.4px;
+  letter-spacing: -0.6px;
+}
+
+.h2 {
+  font: {
+    family: "avenir-next-cyr-bold", sans-serif;
+    size: 38px;
+  }
+  letter-spacing: -0.1px;
+}
+
+.h3 {
+  font: {
+    family: "avenir-next-cyr-bold", sans-serif;
+    size: 28px;
+  }
+  letter-spacing: 1px;
+}
+
 .wrapper {
-  width: 1440px;
   max-width: 100%;
   margin: 0 auto;
 }
 
 .container {
+  position: relative;
   width: 1000px;
   max-width: 100%;
   margin: 0 auto;
