@@ -1,18 +1,23 @@
 .bg_black {
   background: #000;
+  position: relative;
 }
 
 .footer {
   display: flex;
-  justify-content: space-around;
-  position: relative;
-  height: 250px;
-  padding-top: 25px;
+  justify-content: center;
+  padding: 60px 0;
+
+  @media screen and (max-width: 1100px) {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 110px;
+  }
 
   &__logo {
     position: absolute;
-    left: -65px;
-    top: 25px;
+    left: 25px;
+    top: 30px;
   }
 
   a {
@@ -37,26 +42,30 @@
 
   &__social {
     position: absolute;
-    right: -100px;
+    right: 25px;
     top: 50px;
 
-    ul {
+  ul {
+    display: flex;
+
+    li {
       display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      background: #cbd862;
 
-      li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 10px;
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        background: #cbd862;
-
-        a {
-          color: #000;
-        }
-      }
+    a {
+      color: #000;
     }
+    }
+  }
+  }
+
+  &__list-copyright {
+    color: #a0a0a0;
   }
 }
