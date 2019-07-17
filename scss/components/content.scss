@@ -277,6 +277,10 @@
 
     @media screen and (max-width: 450px) {
       background-size: cover;
+      position: relative;
+      left: -15px;
+      width: calc(100% + 30px);
+  
     }
 
     input {
