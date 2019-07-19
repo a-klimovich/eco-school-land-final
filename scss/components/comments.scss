@@ -14,6 +14,10 @@
     margin-bottom: 20px;
     position: relative;
 
+    @media screen and (max-width: 1100px) {
+      margin-left: 0;
+    }
+
     &:before,
     &:after {
       content: '';
@@ -23,9 +27,9 @@
       height: 100%;
       top: 0;
 
-      // @media screen and (max-width: 1100px) {
-      //   content: none;
-      // }
+      @media screen and (max-width: 1100px) {
+        content: none;
+      }
     }
 
     &__message {
@@ -70,5 +74,10 @@
 
   .pages {
     margin-left: 30%;
+
+    @media screen and (max-width: 1100px) {
+      margin-left: 0;
+      align-self: center;
+    }
   }
 }

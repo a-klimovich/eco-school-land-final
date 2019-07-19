@@ -8,6 +8,26 @@ $(function() {
     $('.navigation').toggleClass('active');
   })
 
+  // FORM
+
+  $(document).on('submit', '.registration__form', function(e) {
+    e.preventDefault();
+
+    const $form = $(this);
+
+    $.ajax({
+      method: $form.attr('method'),
+      url: $form.attr('action'),
+      data: $form.serialize()
+    })
+    .done(() => {
+      alert('Отправлено успешно')
+    })
+    .fail(() => {
+      alert('Ошибка отправки')
+    })
+  })
+
   // SLIDERS
 
   // header
@@ -26,6 +46,14 @@ $(function() {
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   })
   handleSliderArrows($extraSlider, '#extraSliderPrev', '#extraSliderNext', '#extraSliderCounter')
 
@@ -42,8 +70,16 @@ $(function() {
   $commentsSlider.slick({
     dots: false,
     arrows: false,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   })
   handleSliderArrows($commentsSlider, '#sliderCommentsPrev', '#sliderCommentsNext', '#sliderCommentsCounter')
 
