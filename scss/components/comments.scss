@@ -36,7 +36,6 @@
   &__item{
     padding: 30px;
     border-radius: 10px;
-    text-align: justify;
     margin: 0 10px;
     width: 100%;
 
@@ -44,6 +43,8 @@
 
   .user-info {
     display: flex;
+    justify-content: center;
+    padding-left: 30px;
     align-items: center;
     margin-bottom: 20px;
 

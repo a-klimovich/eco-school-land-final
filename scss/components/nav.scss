@@ -58,6 +58,7 @@
 
 .burgermenu {
   position: absolute;
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +121,12 @@
   bottom: -402px;
   right: 0;
   text-align: right;
-
+  
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    bottom: -400px;
+  }
+  
   a {
     text-decoration: none;
     color: #fff;

@@ -372,6 +372,7 @@ h3, .h3 {
 
 .container {
   position: relative;
+  z-index: 100;
   width: 1000px;
   max-width: 100%;
   margin: 0 auto; }
@@ -402,23 +403,47 @@ h3, .h3 {
 .col-1 {
   width: 100%; }
 
-.clr-grn {
-  color: #8fab32; }
-
-.clr-light-grn {
-  color: #cbd862; }
-
 .bg_gray-left-side {
   position: relative; }
   .bg_gray-left-side::before {
     content: '';
     position: absolute;
-    background: yellow;
+    z-index: 0;
+    background: #eeeff2;
     left: 0;
     top: -50px;
+    width: 55%;
+    height: 666px; }
+  .bg_gray-left-side::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    background: #8fab32;
+    right: 0;
+    top: -50px;
+    width: 20%;
+    height: 2px; }
+
+.bg_gray-right-side {
+  position: relative; }
+  .bg_gray-right-side::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    background: #8fab32;
+    left: 0;
+    top: 0;
+    width: 10%;
+    height: 2px; }
+  .bg_gray-right-side::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    background: #eeeff2;
+    right: 0;
+    top: 0;
     width: 70%;
-    height: 999px;
-    z-index: 0; }
+    height: 999px; }
 
 .btn {
   text-align: center;
@@ -507,13 +532,16 @@ h3, .h3 {
   .comments__item {
     padding: 30px;
     border-radius: 10px;
-    text-align: justify;
     margin: 0 10px;
     width: 100%; }
   .comments .user-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 30px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -613,8 +641,8 @@ h3, .h3 {
         padding: 0;
         height: 350px; } }
     .expert__img img {
-      height: 100%;
-      width: 100%; }
+      max-width: 100%;
+      max-height: 100%; }
   .expert__content {
     padding: 60px 0 0 60px; }
     @media screen and (max-width: 1100px) {
@@ -1008,6 +1036,7 @@ h3, .h3 {
 
 .burgermenu {
   position: absolute;
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1065,6 +1094,10 @@ h3, .h3 {
   bottom: -402px;
   right: 0;
   text-align: right; }
+  @media screen and (max-width: 768px) {
+    .navigation {
+      width: 100%;
+      bottom: -400px; } }
   .navigation a {
     text-decoration: none;
     color: #fff;

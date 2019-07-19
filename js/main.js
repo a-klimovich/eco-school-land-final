@@ -42,7 +42,7 @@ $(function() {
   $commentsSlider.slick({
     dots: false,
     arrows: false,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
   })
   handleSliderArrows($commentsSlider, '#sliderCommentsPrev', '#sliderCommentsNext', '#sliderCommentsCounter')
