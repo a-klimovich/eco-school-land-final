@@ -74,3 +74,15 @@
     height: 999px;
   }
 }
+
+.bg-green-elem-left-0 {
+  position: relative;
+
+  &::after {
+    content: url('/image/content/bg-green-elem_0.png');
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: -70px;
+  }
+}

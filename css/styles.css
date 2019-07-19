@@ -445,6 +445,15 @@ h3, .h3 {
     width: 70%;
     height: 999px; }
 
+.bg-green-elem-left-0 {
+  position: relative; }
+  .bg-green-elem-left-0::after {
+    content: url("/image/content/bg-green-elem_0.png");
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: -70px; }
+
 .btn {
   text-align: center;
   border: none;
