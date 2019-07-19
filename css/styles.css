@@ -443,7 +443,7 @@ h3, .h3 {
     right: 0;
     top: 0;
     width: 70%;
-    height: 999px; }
+    height: 888px; }
 
 .bg-green-elem-left-0 {
   position: relative; }
@@ -636,7 +636,7 @@ h3, .h3 {
     background: #888; }
 
 .expert {
-  margin: 100px 0 240px 0; }
+  margin: 100px 0 180px 0; }
   @media screen and (max-width: 1100px) {
     .expert {
       margin-bottom: 100px; } }
@@ -1029,7 +1029,7 @@ h3, .h3 {
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 75%;
+      width: 85%;
       height: 2px;
       background: #8fab32; }
     .nav__menu::after {
@@ -1038,7 +1038,7 @@ h3, .h3 {
       position: absolute;
       background: #ccc; }
   .nav__menu-link {
-    margin-right: 25%; }
+    margin-right: 15%; }
     @media screen and (max-width: 1100px) {
       .nav__menu-link {
         display: none; } }

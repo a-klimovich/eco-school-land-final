@@ -34,7 +34,7 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 75%;
+      width: 85%;
       height: 2px;
       background: #8fab32;
     }
@@ -48,7 +48,7 @@
   }
 
   &__menu-link {
-    margin-right: 25%;
+    margin-right: 15%;
 
     @media screen and (max-width: 1100px) {
       display: none;
