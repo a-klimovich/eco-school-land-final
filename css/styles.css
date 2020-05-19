@@ -325,15 +325,15 @@ textarea {
 
 @font-face {
   font-family: 'avenir-next-cyr-light';
-  src: url("/fonts/avenir-next-cyr-light.ttf"); }
+  src: url("./fonts/avenir-next-cyr-light.ttf"); }
 
 @font-face {
   font-family: "avenir-next-cyr-regular";
-  src: url("/fonts/avenir-next-cyr-regular.ttf"); }
+  src: url("./fonts/avenir-next-cyr-regular.ttf"); }
 
 @font-face {
   font-family: "avenir-next-cyr-bold";
-  src: url("/fonts/avenir-next-cyr-bold.ttf"); }
+  src: url("./fonts/avenir-next-cyr-bold.ttf"); }
 
 * {
   -webkit-box-sizing: border-box;
@@ -996,9 +996,11 @@ h3, .h3 {
       max-height: 100%; }
   .header .pages {
     position: absolute;
-    left: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
     bottom: 0;
-    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1019,7 +1021,8 @@ h3, .h3 {
   .nav__logo img {
     position: absolute;
     top: 0;
-    left: -80px; }
+    left: -80px;
+    cursor: pointer; }
     @media screen and (max-width: 1100px) {
       .nav__logo img {
         left: 0; } }
@@ -1124,14 +1127,17 @@ h3, .h3 {
     font-family: "avenir-next-cyr-light";
     font-size: 15px;
     line-height: 29px;
-    letter-spacing: 0.7px; }
+    letter-spacing: 0.7px;
+    display: block;
+    outline: none; }
   .navigation ul {
     padding-top: 30px;
     margin-bottom: 80px; }
     .navigation ul li {
       position: relative;
       margin-right: 80px;
-      padding: 10px 0; }
+      padding: 10px 0;
+      cursor: pointer; }
       .navigation ul li:hover {
         border-bottom: 1px solid #191919;
         margin-bottom: -1px; }

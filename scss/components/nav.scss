@@ -15,6 +15,7 @@
       position: absolute;
       top: 0;
       left: -80px;
+      cursor: pointer;
 
       @media screen and (max-width: 1100px) {
         left: 0;
@@ -136,6 +137,8 @@
     }
     line-height: 29px;
     letter-spacing: 0.7px;
+    display: block;
+    outline: none;
   }
 
   ul {
@@ -146,6 +149,7 @@
       position: relative;
       margin-right: 80px;
       padding: 10px 0;
+      cursor: pointer;
       
       &:hover {
         border-bottom: 1px solid #191919;
