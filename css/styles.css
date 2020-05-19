@@ -325,15 +325,15 @@ textarea {
 
 @font-face {
   font-family: 'avenir-next-cyr-light';
-  src: url("./fonts/avenir-next-cyr-light.ttf"); }
+  src: url("../fonts/avenir-next-cyr-light.ttf"); }
 
 @font-face {
   font-family: "avenir-next-cyr-regular";
-  src: url("./fonts/avenir-next-cyr-regular.ttf"); }
+  src: url("../fonts/avenir-next-cyr-regular.ttf"); }
 
 @font-face {
   font-family: "avenir-next-cyr-bold";
-  src: url("./fonts/avenir-next-cyr-bold.ttf"); }
+  src: url("../fonts/avenir-next-cyr-bold.ttf"); }
 
 * {
   -webkit-box-sizing: border-box;
