@@ -761,10 +761,12 @@ h3, .h3 {
       padding-bottom: 0; } }
   .profit__title {
     margin-bottom: 70px; }
-  @media screen and (max-width: 1100px) {
-    .profit__content {
-      margin-bottom: 25px;
-      padding: 0 20px; } }
+  .profit__content {
+    padding: 10px; }
+    @media screen and (max-width: 1100px) {
+      .profit__content {
+        margin-bottom: 25px;
+        padding: 0 20px; } }
   .profit__content-box {
     padding-left: 120px;
     display: -webkit-box;
@@ -907,7 +909,7 @@ h3, .h3 {
   .footer a {
     text-decoration: none;
     color: #fff;
-    font-family: "avenir-next-cyr-light";
+    font-family: 'avenir-next-cyr-light', sans-serif;
     font-size: 15px;
     line-height: 29px;
     letter-spacing: 0.7px; }
