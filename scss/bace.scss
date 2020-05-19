@@ -367,17 +367,17 @@ textarea {
 // bace-styles
 @font-face {
   font-family: 'avenir-next-cyr-light';
-  src: url('/fonts/avenir-next-cyr-light.ttf');
+  src: url('./fonts/avenir-next-cyr-light.ttf');
 }
 
 @font-face {
   font-family: "avenir-next-cyr-regular";
-  src: url('/fonts/avenir-next-cyr-regular.ttf');
+  src: url('./fonts/avenir-next-cyr-regular.ttf');
 }
 
 @font-face {
   font-family: "avenir-next-cyr-bold";
-  src: url('/fonts/avenir-next-cyr-bold.ttf');
+  src: url('./fonts/avenir-next-cyr-bold.ttf');
 }
 
 @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
@@ -387,7 +387,6 @@ textarea {
 }
 
 body { 
-
   font: {
     family: "avenir-next-cyr-regular", sans-serif;
     size: 16px;
