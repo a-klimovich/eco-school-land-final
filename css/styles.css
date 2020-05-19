@@ -628,7 +628,11 @@ h3, .h3 {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 30px;
-    margin-right: 15px; }
+    margin-right: 15px;
+    padding: 5px; }
+    .extra__content p {
+      padding: 5px;
+      padding-left: 15px; }
   .extra .pages {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -999,9 +1003,9 @@ h3, .h3 {
   .header .pages {
     position: absolute;
     left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-        -ms-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
+    -webkit-transform: translate(-48.5%, 0%);
+        -ms-transform: translate(-48.5%, 0%);
+            transform: translate(-48.5%, 0%);
     bottom: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
