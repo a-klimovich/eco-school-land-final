@@ -324,16 +324,16 @@ textarea {
   padding: 0.2em 0; }
 
 @font-face {
-  font-family: 'avenir-next-cyr-light';
-  src: url("./fonts/avenir-next-cyr-light.ttf"); }
+  font-family: 'avenir-next-cyr-light', sans-serif;
+  src: url("../fonts/avenir-next-cyr-light.ttf"); }
 
 @font-face {
-  font-family: "avenir-next-cyr-regular";
-  src: url("./fonts/avenir-next-cyr-regular.ttf"); }
+  font-family: "avenir-next-cyr-regular", sans-serif;
+  src: url("../fonts/avenir-next-cyr-regular.ttf"); }
 
 @font-face {
-  font-family: "avenir-next-cyr-bold";
-  src: url("./fonts/avenir-next-cyr-bold.ttf"); }
+  font-family: "avenir-next-cyr-bold", sans-serif;
+  src: url("../fonts/avenir-next-cyr-bold.ttf"); }
 
 * {
   -webkit-box-sizing: border-box;
@@ -1124,7 +1124,7 @@ h3, .h3 {
   .navigation a {
     text-decoration: none;
     color: #fff;
-    font-family: "avenir-next-cyr-light";
+    font-family: "avenir-next-cyr-light" sans-serif;
     font-size: 15px;
     line-height: 29px;
     letter-spacing: 0.7px;
